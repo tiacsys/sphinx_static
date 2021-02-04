@@ -13,3 +13,6 @@
 [submodule "reveal.js-themeoverride"]
 	path = revealjs/revealjs4/plugin/themeoverride
 	url = git@github.com:McShelby/reveal-themeoverride.git
+[submodule "reveal.js-notes-pointer"]
+	path = revealjs/revealjs4/plugin/notes-pointer
+	url = git@github.com:djsutherland/reveal.js-notes-pointer.git
