@@ -10,3 +10,6 @@
 [submodule "reveal.js-pdfexport"]
 	path = revealjs/revealjs4/plugin/pdfexport
 	url = git@github.com:McShelby/reveal-pdfexport.git
+[submodule "reveal.js-themeoverride"]
+	path = revealjs/revealjs4/plugin/themeoverride
+	url = git@github.com:McShelby/reveal-themeoverride.git
