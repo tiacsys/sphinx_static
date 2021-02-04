@@ -4,3 +4,6 @@
 [submodule "reveal.js-altmode"]
 	path = revealjs/revealjs4/plugin/altmode
 	url = git@github.com:McShelby/reveal-altmode.git
+[submodule "reveal.js-helpbutton"]
+	path = revealjs/revealjs4/plugin/helpbutton
+	url = git@github.com:McShelby/reveal-helpbutton.git
