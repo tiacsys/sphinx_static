@@ -7,3 +7,6 @@
 [submodule "reveal.js-helpbutton"]
 	path = revealjs/revealjs4/plugin/helpbutton
 	url = git@github.com:McShelby/reveal-helpbutton.git
+[submodule "reveal.js-pdfexport"]
+	path = revealjs/revealjs4/plugin/pdfexport
+	url = git@github.com:McShelby/reveal-pdfexport.git
