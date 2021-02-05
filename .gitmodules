@@ -1,18 +1,18 @@
 [submodule "reveal.js-menu"]
 	path = revealjs/revealjs4/plugin/menu
-	url = git@github.com:denehyg/reveal.js-menu.git
+	url = https://github.com/denehyg/reveal.js-menu.git
 [submodule "reveal.js-altmode"]
 	path = revealjs/revealjs4/plugin/altmode
-	url = git@github.com:McShelby/reveal-altmode.git
+	url = https://github.com/McShelby/reveal-altmode.git
 [submodule "reveal.js-helpbutton"]
 	path = revealjs/revealjs4/plugin/helpbutton
-	url = git@github.com:McShelby/reveal-helpbutton.git
+	url = https://github.com/McShelby/reveal-helpbutton.git
 [submodule "reveal.js-pdfexport"]
 	path = revealjs/revealjs4/plugin/pdfexport
-	url = git@github.com:McShelby/reveal-pdfexport.git
+	url = https://github.com/McShelby/reveal-pdfexport.git
 [submodule "reveal.js-themeoverride"]
 	path = revealjs/revealjs4/plugin/themeoverride
-	url = git@github.com:McShelby/reveal-themeoverride.git
+	url = https://github.com/McShelby/reveal-themeoverride.git
 [submodule "reveal.js-notes-pointer"]
 	path = revealjs/revealjs4/plugin/notes-pointer
-	url = git@github.com:djsutherland/reveal.js-notes-pointer.git
+	url = https://github.com/djsutherland/reveal.js-notes-pointer.git
