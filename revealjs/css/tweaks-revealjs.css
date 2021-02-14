@@ -1,3 +1,9 @@
+@charset "utf-8";
+
+.reveal .left-justified {
+  text-align: left;
+}
+
 .reveal .controls.helpbutton {
   left: 90px !important;
 }
