@@ -4,6 +4,20 @@
   text-align: left;
 }
 
+.reveal .slides section .fragment.highlight-yellow,
+.reveal .slides section .fragment.highlight-current-yellow {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .slides section .fragment.highlight-yellow.visible {
+  color: #ffc61a;
+}
+
+.reveal .slides section .fragment.highlight-current-yellow.current-fragment {
+  color: #ffc61a;
+}
+
 .reveal .controls.helpbutton {
   left: 90px !important;
 }
