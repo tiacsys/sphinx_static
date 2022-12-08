@@ -1,4 +1,4 @@
-# Li-Pro.Net static artifacts for Sphinx documents
+# TiaC Systems static artifacts for Sphinx documents
 
 This repository contains static artifacts shared with multiple Sphinx
 document projects.
