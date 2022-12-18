@@ -12,10 +12,10 @@ FVY="9"
 FVZ="45"
 FF="WenQuanYi"
 FN="ZenHei"
-FS="${FN}"
-# FS="ZenHei     \
-#     ZenHeiMono \
-#     ZenHeiSharp"
+# FS="${FN}"
+FS="ZenHei     \
+    ZenHeiMono \
+    ZenHeiSharp"
 FC="AUTHORS COPYING README"
 
 ##############################################################################
