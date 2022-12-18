@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'WenQuanYi Zen Hei','文泉驛正黑'
+  font-family: 'WenQuanYi Zen Hei';
   src: local('WenQuanYi Zen Hei Regular'); /* Client Side Font */
   src: url('WenQuanYi/WenQuanYiZenHei.eot?v=0.900'); /* IE9 Compat Modes */
   src: url('WenQuanYi/WenQuanYiZenHei.eot?#iefix&v=0.900') format('embedded-opentype'), /* IE6-IE8 */
