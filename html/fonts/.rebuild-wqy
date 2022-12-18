@@ -347,7 +347,8 @@ sty2fw() {
 sty2fs() {
   case "${1}" in
     Book) echo "normal" ;;
-    *Oblique*|*Italic*) echo "italic,oblique" ;;
+    *Italic*) echo "italic" ;;
+    *Oblique*) echo "oblique" ;;
     *) echo "normal" ;;
   esac
 }
@@ -390,13 +391,12 @@ providecss() {
     local fontweight=$(sty2fw "${style}")
     local fontstyle=$(sty2fs "${style}")
 
-    local fontfamily="${fontfamily1}${fontfamily1:+','}${fontfamily0}"
-    local fontlocal="${fontfamily1:+${fontfamily1} ${style0}}"
-          fontlocal="${fontlocal:-${fontfamily0} ${style0}}"
+    local fontfamily="${fontfamily1:=${fontfamily0}}"
+    local fontlocal="${fontfamily1:=${fontfamily0}} ${style1:=${style0}}"
     local fv=$(echo "${fontversion}" | perl -E 'printf "%.3f", <>/65536.0')
 
     echo "@font-face {"
-    echo "  font-family: '${fontfamily}'"
+    echo "  font-family: '${fontfamily}';"
     echo "  src: local('${fontlocal}'); /* Client Side Font */"
     echo "  src: url('${eot}?v=${fv}'); /* IE9 Compat Modes */"
     echo "  src: url('${eot}?#iefix&v=${fv}') format('embedded-opentype'), /* IE6-IE8 */"
