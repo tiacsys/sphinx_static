@@ -1,0 +1,68 @@
+name: CI/CD – Build and Deploy
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - html/fonts/**
+      - '.github/workflows/fonts-*.yml'
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  fonts-build-and-deploy:
+    name: Build and deploy fonts to GitHub Pages
+
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout 🛎️
+        id: checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Pages 🏷️
+        id: setup
+        uses: actions/configure-pages@v2
+
+      - name: Install and Build 🔧
+        id: build
+        run: |
+          sudo apt-get install -y woff2 eot-utils fontconfig fontforge-nox
+          cd html/fonts
+          ./.rebuild-dejavu -c
+          ./.rebuild-wqy -c
+
+      - name: Collect 📎
+        id: collect
+        run: |
+          mkdir -vp publish/fonts
+          touch publish/.nojekyll
+          mv -vf html/fonts/DejaVu* publish/fonts
+          mv -vf html/fonts/WenQuanYi* publish/fonts
+          ls -alR publish
+
+      - name: Upload 📨
+        id: upload
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: publish
+
+      - name: Deploy 🚀
+        id: deploy
+        uses: actions/deploy-pages@v1
