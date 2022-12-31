@@ -1,0 +1,59 @@
+/**
+ * TiaC Systems Reveal.js theme – default settings
+ *
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2022 TiaC Systems
+ * reveal.js is Copyright (C) 2011-2022 Hakim El Hattab
+ * http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://tiacsys.github.io/sphinx_static/fonts/DejaVu.css);
+
+// Override theme settings (see template/settings.scss)
+
+// Background of the presentation
+$backgroundColor: #ffffff;
+
+// Primary/body text
+$mainFont: 'DejaVu Sans Condensed', sans-serif;
+$mainFontSize: 24px;
+$mainColor: #000;
+$codeFont: 'DejaVu Sans Mono', monospace;
+
+// Headings
+$headingFont: 'DejaVu Sans Light', Impact, sans-serif;
+$headingColor: #000000;
+$headingLineHeight: 1.2;
+$headingTextShadow: 0px 0px 20px rgba(0,0,0,0.5);  // none
+$headingTextTransform: uppercase;       // uppercase, none
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Links and actions
+$linkColor: #00008B;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+// Background generator
+@mixin bodyBackground() {
+	@include vertical-gradient( #ffffff, #cccccc );
+	// @include radial-gradient( #ffffff, #cccccc );
+}
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#ffffff);

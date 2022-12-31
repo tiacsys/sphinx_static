@@ -1,0 +1,50 @@
+/**
+ * TiaC Systems Reveal.js theme for DeckTape output
+ *
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2022 TiaC Systems
+ * reveal.js is Copyright (C) 2011-2022 Hakim El Hattab
+ * http://hakim.se
+ */
+
+
+// TiaC Systems default theme settings ---------
+@import "tiac/settings";
+// ---------------------------------------------
+
+
+// Override theme default settings (see tiac/settings.scss)
+
+// Reduce all over font size for printing output
+$mainFontSize: 16px;
+
+// Vertical spacing between blocks of text
+$blockMargin: 10px;
+
+// Reduce all heading size for printing output
+$headingLineHeight: 1.0;
+$heading1Size: 2.0em;
+$heading2Size: 1.4em;
+$heading3Size: 1.2em;
+$heading4Size: 1.0em;
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
+
+
+// TiaC Systems theme tweaks -------------------
+@import "tiac/tweaks";
+// ---------------------------------------------
+
+// Avoid line to line gap when reduced font size is using
+.reveal .slides section,
+.reveal .slides section > section,
+.reveal p,
+.reveal small {
+//	line-height: var(--r-heading-line-height);
+	line-height: unset;
+}

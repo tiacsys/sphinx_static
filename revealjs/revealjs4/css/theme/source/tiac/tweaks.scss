@@ -1,0 +1,117 @@
+/**
+ * TiaC Systems Reveal.js theme – tweaks
+ *
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2022 TiaC Systems
+ * reveal.js is Copyright (C) 2011-2022 Hakim El Hattab
+ * http://hakim.se
+ */
+
+
+// Tiac Systems color branding (default)
+:root {
+	--r-theme-heading-color-tiac: rgba(16, 115, 158, 1.0);
+	--r-theme-shadow-color-tiac: rgba(108, 142, 191, 0.5);
+}
+
+// Method Park by UL and Navimatix color branding (mpulnx)
+:root {
+	--r-theme-heading-color-mpulnx: rgba(234, 91, 10, 1.0);
+	--r-theme-shadow-color-mpulnx: rgba(234, 91, 10, 0.5);
+}
+
+// Method Park by UL color branding (mpul)
+:root {
+	--r-theme-heading-color-mpul: rgba(0, 60, 112, 1.0);
+	--r-theme-shadow-color-mpul: rgba(0, 60, 112, 0.5);
+}
+
+// Navimatix color branding (nx)
+:root {
+	--r-theme-heading-color-nx: rgba(151, 192, 60, 1.0);
+	--r-theme-shadow-color-nx: rgba(151, 192, 60, 0.5);
+}
+
+// Branding setup (fall back to defaults)
+:root {
+	--r-theme-logo: url('tiac.svg');
+	--r-theme-front: url('tiac-front.svg');
+	--r-theme-corner: url('tiac-corner.svg');
+	--r-theme-heading-color: var(--r-theme-heading-color-tiac);
+	--r-theme-shadow-color: var(--r-theme-shadow-color-tiac);
+	--r-heading-color: var(--r-theme-heading-color);
+	--r-heading-text-shadow: 0px 0px 20px var(--r-theme-shadow-color);
+	--r-heading1-text-shadow: 0px 0px 20px var(--r-theme-shadow-color);
+}
+
+//html.title body.reveal-viewport {
+//	background: var(--r-theme-front), var(--r-theme-logo);
+//	background-repeat: no-repeat;
+//	background-position: top left, bottom right;
+//	background-size: 100% auto, 20% 20%;
+//}
+
+body.reveal-viewport {
+	background-image: var(--r-theme-corner), var(--r-theme-logo);
+	background-repeat: no-repeat;
+	background-position: top left, top 1% right 1%;
+	background-size: auto 30%, 15% 15%;
+}
+
+.reveal pre {
+	font-size: 0.6em !important;
+	line-height: 1.2em !important;
+	box-shadow: 0px 5px 15px var(--r-theme-shadow-color);
+}
+
+.reveal img,
+.reveal object,
+.reveal [data-chart],
+.reveal [data-animate] {
+	display: inline-flex !important;
+	box-shadow: 0px 5px 15px var(--r-theme-shadow-color);
+}
+
+.reveal [data-chart],
+.reveal [data-animate] {
+	padding: 10px 10px 10px 10px;
+}
+
+.copyright, .docident {
+	font-family: var(--r-heading-font);
+	font-size: 0.5em;
+	font-weight: normal;
+	color: var(--r-main-color);
+	opacity: 0.5;
+}
+
+div.copyright {
+	position: absolute;
+	bottom: 20px !important;
+	left: 20px !important;
+}
+
+div.docident {
+	position: absolute;
+	bottom: 20px !important;
+	right: 160px !important;
+}
+
+.copyright ul.field-list {
+	line-height: unset;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.docident dl.field-list {
+	display: grid !important;
+	grid-template-columns: max-content auto;
+	line-height: unset;
+}
+
+.docident dl.field-list > dt:after {
+	content: ':';
+}

@@ -1,0 +1,28 @@
+/**
+ * TiaC Systems Reveal.js theme
+ *
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2022 TiaC Systems
+ * reveal.js is Copyright (C) 2011-2022 Hakim El Hattab
+ * http://hakim.se
+ */
+
+
+// TiaC Systems default theme settings ---------
+@import "tiac/settings";
+// ---------------------------------------------
+
+
+// Override theme default settings (see tiac/settings.scss)
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
+
+
+// TiaC Systems theme tweaks -------------------
+@import "tiac/tweaks";
+// ---------------------------------------------
