@@ -19,7 +19,8 @@
 }
 
 .reveal .controls.helpbutton {
-  left: 90px !important;
+  left: revert !important;
+  right: 80px !important;
 }
 
 .reveal .slide-menu-button {
@@ -31,4 +32,18 @@
   font-size: 75%;
   line-height: 95%;
   max-height: 500px;
+}
+
+#customcontrols {
+  bottom: 50px !important;
+}
+
+#customcontrols > ul {
+  bottom: 84px !important;
+}
+
+@media only screen and (min-width: 500px) {
+  #customcontrols > ul {
+    bottom: 40px !important;
+  }
 }
