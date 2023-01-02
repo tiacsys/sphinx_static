@@ -16,3 +16,6 @@
 [submodule "reveal.js-notes-pointer"]
 	path = revealjs/revealjs4/plugin/notes-pointer
 	url = https://github.com/djsutherland/reveal.js-notes-pointer.git
+[submodule "reveal.js-rajgoel"]
+	path = revealjs/revealjs4/plugin/rajgoel
+	url = https://github.com/rajgoel/reveal.js-plugins.git
