@@ -2,6 +2,10 @@
  * Tweaks and fixes for Read the Docs Sphinx theme.
  */
 
+.rst-content div.asciinema:not(table) {
+  display: table;
+}
+
 /*
  * Text wrapping in argument tables,
  * override table width restrictions.

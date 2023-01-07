@@ -18,6 +18,10 @@
   color: #ffc61a;
 }
 
+.reveal div.asciinema {
+  display: inline-block;
+}
+
 .reveal .controls.helpbutton {
   left: revert !important;
   right: 80px !important;
