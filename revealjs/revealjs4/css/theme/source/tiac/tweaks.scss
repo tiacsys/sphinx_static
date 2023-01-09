@@ -61,6 +61,7 @@ body.reveal-viewport {
 }
 
 .reveal pre {
+	width: revert !important;
 	font-size: 0.6em !important;
 	line-height: 1.2em !important;
 	box-shadow: 0px 5px 15px var(--r-theme-shadow-color);
@@ -77,6 +78,114 @@ body.reveal-viewport {
 .reveal [data-chart],
 .reveal [data-animate] {
 	padding: 10px 10px 10px 10px;
+}
+
+.reveal {
+//	.adjust-section-structure {
+//		font-size: 0.5em;
+//	}
+	.flex-container {
+		display: flex;
+		flex-flow: row nowrap;
+		margin-bottom: 2.5em;
+		.pct05 {
+			flex: 0.5;
+			width: 5%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct10 {
+			flex: 0.5;
+			width: 10%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct20 {
+			flex: 0.5;
+			width: 20%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct25, .one-quarter {
+			flex: 0.5;
+			width: 25%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct33, .one-third {
+			flex: 0.5;
+			width: 33%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct40, .one-third {
+			flex: 0.5;
+			width: 40%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct50, .half {
+			flex: 1;
+			width: 50%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct60, .two-thirds {
+			flex: 1;
+			width: 60%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct66, .two-thirds {
+			flex: 1;
+			width: 66%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct75, .three-quarters {
+			flex: 1;
+			width: 75%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct80 {
+			flex: 1;
+			width: 80%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct90 {
+			flex: 1;
+			width: 90%;
+			padding: 10px 10px 10px 10px;
+		}
+		.pct95 {
+			flex: 1;
+			width: 95%;
+			padding: 10px 10px 10px 10px;
+		}
+	}
+	.legend {
+		font-size: smaller;
+	}
+	dl.legend {
+		display: grid;
+		grid-template-columns: fit-content(30%) auto;
+	}
+	dl.legend > dt {
+		font-weight: bold;
+		word-break: break-word;
+		padding-left: 0.5em;
+		padding-right: 5px;
+	}
+	dl.legend > dt:after {
+		content: unset;
+	}
+	dl.legend > dd {
+		padding-left: 0.5em;
+		margin-top: 0em;
+		margin-left: 0em;
+		margin-bottom: 0em;
+	}
+	dl.legend > dd > p {
+		margin-block-start: unset;
+		margin-block-end: unset;
+	}
+//	h1, h2, h3 {
+//		text-transform: none;
+//	}
+//	code * {
+//		font-family: monospace;
+//	}
 }
 
 .copyright, .docident {
