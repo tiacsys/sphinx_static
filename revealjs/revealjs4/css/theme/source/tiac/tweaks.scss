@@ -188,6 +188,18 @@ body.reveal-viewport {
 //	}
 }
 
+.reveal :not(dl.option-list) > :not(dt):not(kbd):not(.kbd) > .kbd,
+.reveal :not(dl.option-list) > :not(dt):not(kbd):not(.kbd) > kbd {
+    color: inherit;
+    font-size: 80%;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    box-shadow: 0 2px grey;
+    padding: 2.4px 6px;
+    margin: auto 0;
+}
+
 .copyright, .docident {
 	font-family: var(--r-heading-font);
 	font-size: 0.5em;
