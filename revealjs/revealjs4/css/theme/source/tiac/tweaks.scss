@@ -183,9 +183,21 @@ body.reveal-viewport {
 //	h1, h2, h3 {
 //		text-transform: none;
 //	}
-//	code * {
-//		font-family: monospace;
-//	}
+	.legend * code {
+		max-height: fit-content;
+		max-height: -moz-available;
+		max-height: -webkit-fill-available;
+		overflow: scroll;
+	}
+	// hide scrollbar for IE, Edge and Firefox
+	.legend * code {
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;     /* Firefox */
+	}
+	// hide scrollbar for Chrome, Safari and Opera
+	.legend * code::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 .reveal :not(dl.option-list) > :not(dt):not(kbd):not(.kbd) > .kbd,
