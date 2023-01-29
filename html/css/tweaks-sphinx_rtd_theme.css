@@ -6,6 +6,15 @@
   display: table;
 }
 
+.rst-content img.profile {
+  border-radius: 100%
+}
+
+.rst-content table.profile th,
+.rst-content table.profile td {
+  text-align: center;
+}
+
 /*
  * Text wrapping in argument tables,
  * override table width restrictions.
