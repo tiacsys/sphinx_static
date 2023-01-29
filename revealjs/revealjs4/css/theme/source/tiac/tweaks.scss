@@ -76,6 +76,15 @@ body.reveal-viewport {
 	box-shadow: 0px 5px 15px var(--r-theme-shadow-color);
 }
 
+.reveal img.profile {
+	border-radius: 100%
+}
+
+.reveal table.profile th,
+.reveal table.profile td {
+	text-align: center;
+}
+
 .reveal [data-chart],
 .reveal [data-animate] {
 	padding: 10px 10px 10px 10px;
