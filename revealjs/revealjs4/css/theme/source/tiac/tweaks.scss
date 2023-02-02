@@ -90,6 +90,11 @@ body.reveal-viewport {
 	padding: 10px 10px 10px 10px;
 }
 
+.reveal [data-animate] > svg {
+	width: var(--slide-width);
+	height: var(--slide-height);
+}
+
 .reveal {
 //	.adjust-section-structure {
 //		font-size: 0.5em;
@@ -99,6 +104,10 @@ body.reveal-viewport {
 		flex-flow: row nowrap;
 		justify-content: center;
 		margin-bottom: 2.5em;
+		[data-animate] > svg {
+			width: 100%;
+			height: 100%;
+		}
 		.pct05 {
 			flex: 0.05;
 			width: 5%;
